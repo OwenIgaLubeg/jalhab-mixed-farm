@@ -28,8 +28,15 @@
 }
 
 .hamburger {
-  width: 20px;
+  font-size: 28px;
+  cursor: pointer;
   display: none;
+  z-index: 99999;
+  user-select: none;
+}
+.hamburger {
+  position: relative;
+  z-index: 100000;
 }
 
 .socialIcons {
@@ -171,16 +178,12 @@
 /* first header style end  */
 
 /* second header with nav items start  */
-.sidebar .logo img {
-  width: 200% !important;
-  max-width: none !important;
+.logo svg {
+  width: 300px !important;   /* increase as you want */
   height: auto !important;
   display: block;
 }
-.sidebar .logo {
-  width: 100% !important;
-  overflow: visible !important;
-}
+
 
 .headAgriosSecond {
   margin: 30px 0;
@@ -429,7 +432,7 @@
   display: flex;
   align-items: center;
 
-  background: url("../assets/images/bannerImage1.jpg") no-repeat center center;
+  background: url("../assets/images/queenCow.jpeg") no-repeat center center;
   background-size: cover;
 }
 
@@ -723,7 +726,7 @@
   justify-content: center;
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
-  background: url("../assets/images/servicesImage3.png");
+  background: url("../assets/images/servicesImage21.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -7203,4 +7206,24 @@ select:focus {
   font-size: 18px;
   font-weight: 500;
   font-family: "Outfit", serif;
+}
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  z-index: 99999;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .headAgriosFirst {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
 }
