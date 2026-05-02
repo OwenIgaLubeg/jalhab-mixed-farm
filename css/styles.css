@@ -7227,3 +7227,92 @@ select:focus {
   }
 
 }
+/* ===== SAFE HAMBURGER (NO CONFLICT) ===== */
+#safe-hamburger {
+position: fixed;
+top: 15px;
+left: 15px;
+font-size: 32px;
+background: #000;
+color: #fff;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+z-index: 999999;
+display: none;
+}
+
+/* MENU */
+#safe-menu {
+position: fixed;
+top: 0;
+left: -100%;
+width: 75%;
+height: 100%;
+background: #ffffff;
+z-index: 999998;
+padding: 30px 20px;
+transition: 0.3s ease;
+}
+
+#safe-menu a {
+display: block;
+margin: 20px 0;
+font-size: 18px;
+text-decoration: none;
+color: #000;
+}
+
+/* ACTIVE */
+#safe-menu.active {
+left: 0;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+#safe-hamburger {
+display: block;
+}
+}
+/* CLICKABLE AREA */
+#video-trigger {
+cursor: pointer;
+}
+
+/* MODAL BACKGROUND */
+#video-modal {
+display: none;
+position: fixed;
+z-index: 999999;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.8);
+justify-content: center;
+align-items: center;
+}
+
+/* VIDEO BOX */
+.video-content {
+position: relative;
+width: 90%;
+max-width: 800px;
+}
+
+/* VIDEO */
+#video-player {
+width: 100%;
+border-radius: 10px;
+}
+
+/* CLOSE BUTTON */
+#close-video {
+position: absolute;
+top: -30px;
+right: 0;
+font-size: 30px;
+color: white;
+cursor: pointer;
+}
+
